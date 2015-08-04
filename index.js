@@ -20,9 +20,9 @@ module.exports = function(tilelive) {
 
     var auth = (uri.auth || "").split(":", 2);
 
-    this.username = auth.shift();
-    this.apiKey = auth.shift();
-    this.hostname = uri.hostname || "cartodb.com";
+    this.username = auth.shift() || process.env.CARTODB_USERNAME;
+    this.apiKey = auth.shift() || process.env.CARTODB_API_KEY;
+    this.hostname = uri.hostname || process.env.CARTODB_HOSTNAME || "cartodb.com";
     this.scale = (uri.query || {}).scale || 1;
 
     try {
