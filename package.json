@@ -1,0 +1,17 @@
+{
+  "name": "tilelive-cartodb",
+  "version": "0.0.0",
+  "description": "A tilelive source for CartoDB",
+  "author": "Seth Fitzsimmons <seth@mojodna.net>",
+  "license": "ISC",
+  "peerDependencies": {
+    "tilelive-http": "^0.8.0"
+  },
+  "dependencies": {
+    "async": "^1.4.0",
+    "debug": "^2.2.0",
+    "holdtime": "^0.1.1",
+    "request": "^2.60.0",
+    "tilelive-http": "^0.8.0"
+  }
+}
