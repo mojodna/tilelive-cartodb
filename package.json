@@ -5,7 +5,7 @@
   "author": "Seth Fitzsimmons <seth@mojodna.net>",
   "license": "ISC",
   "peerDependencies": {
-    "tilelive-http": "^0.10.0"
+    "tilelive-http": "=>0.8.0"
   },
   "dependencies": {
     "debug": "^2.2.0",
